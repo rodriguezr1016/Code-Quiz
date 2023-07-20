@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Code Quiz</title>
+        <link rel="stylesheet" href="./assets/styles.css" />
+    </head>
+    <body>
+        <main>
+            <form id="endQuiz"method="POST">
+                <div class="input-group">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" placeholder="janedoe@mail.com" />
+                </div>
+                <div class="input-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" placeholder="supersecure123" />
+                </div>
+                <div id="msg"></div>
+                <button id="sign-up">Sign Up</button>
+              </form>
+            <h1>Coding Quiz Challenge</h1>
+            <h2>Rules of the game</h2>
+            <section id="rules">
+                <p>Once START is pressed you will be given 45 seconds to answer 3 questions</p>
+                <p>If answered correctly you will progress to the next question</p>
+                <p>If answered incorrectly time will be deducted from your timer</p>
+            </section>
+            <section id="lists">
+                <ol id="list1"></ol>
+                <ol id="list2"></ol>
+                <ol id="list3"></ol>
+                <p id="count"></p>
+            </section>
+            
+        </main>
+        <div> <button id = "startButton"> START</button></div>
+        <script src="./assets/script.js"> </script>
+    </body>
+</html>
